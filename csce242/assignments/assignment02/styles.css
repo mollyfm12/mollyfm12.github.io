@@ -1,0 +1,80 @@
+/*Structure */
+body {
+    background: url(images/ocean3.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    background-color: lightsteelblue;
+    width: 70%;
+    margin: auto;
+    padding: 5px;
+    border: 1px solid midnightblue;
+    border-radius: 3px;
+}
+
+header, footer {
+    background: aliceblue;
+    padding: 5px;
+    color:midnightblue;
+}
+
+/* Navigation */
+
+#main-nav ul {
+    padding-left: 10;
+    background-color: lightsteelblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#main-nav a {
+    color:midnightblue;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+#main-nav li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+#main-nav a:hover {
+    color:aliceblue;
+    border-bottom: 1px solid midnightblue;
+}
+
+main {
+    padding: 15px;
+    color: midnightblue;
+    width: 80%;
+    margin: auto;
+}
+main p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#images {
+    list-style-type: none;
+    display: inline-block;
+    margin: auto;
+}
+main table {
+    background-color: aliceblue;
+    color: midnightblue;
+    padding: 3%;
+    border-radius: 5px;
+}
+main table th {
+    padding-bottom: 3px;
+    text-decoration: underline;
+}
+
+/* Typography */
+header h1 {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}

@@ -1,0 +1,93 @@
+/*Structure*/
+#main-header {
+    background-color: cornsilk;
+    padding: 5px;
+}
+#main-content .ideas-sections, #main-content h2 {
+    padding: 5px;
+    width: 80%;
+    margin: auto;
+}
+#main-content {
+    color:whitesmoke;
+}
+
+.main-idea1 {
+    background-color:palevioletred;
+}
+.main-idea2 {
+    background-color:seagreen;
+}
+
+
+.ideas, .titles, .links {
+    padding: 5px;
+}
+.links ul {
+    padding-left: 0px;
+}
+.links li {
+    list-style: none;
+    padding:5px;
+    background-color: mistyrose;
+}
+.links a {
+    text-decoration: none;
+    color:seagreen;
+}
+.links {
+    background-color: darkseagreen;
+}
+.titles {
+    background-color:palevioletred;
+}
+
+
+
+
+
+/*Navigation*/
+#main-nav ul {
+    padding-left: 0px;
+}
+#main-nav li {
+    list-style-type: none;
+    padding: 5px;
+    background-color: mistyrose;
+    border-bottom: 1px solid cornsilk;
+}
+#main-nav a {
+    text-decoration: none;
+    color:seagreen;
+}
+#main-content h4 {
+    text-align: center;
+}
+
+
+/*Typography*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main-header h1 {
+    text-align: center;
+}
+#main-content h2 {
+    color: seagreen;
+}
+
+/*Flex*/
+@media (min-width: 900px) {
+    #main-nav ul, .title-sections, .main-idea-left, .main-idea-right {
+        display: flex;
+    }
+    #main-nav li, .links, .image1, .paragraph-right {
+        flex:1;
+    }
+    .col1of6 {
+        flex:2;
+    }
+    .col4of6 {
+        flex: 3;
+    }
+}

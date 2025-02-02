@@ -1,0 +1,110 @@
+/*Structure*/
+body {
+    background-color: green;
+}
+
+/*Headers*/
+#main-header {
+    background-color: black;
+    height: 100px;
+    width: 101%;
+    position: absolute;
+    margin-top: -15px;
+    margin-left: -10px;
+}
+
+#header-logo {
+    color:white;
+    margin-left: 120px;
+    position: relative;
+    bottom:15px;
+}
+#header-logo p {
+    position: absolute;
+}
+#header-logo img {
+    position: relative;
+    right: 60px;
+    bottom:45px;
+}
+
+#header-college {
+    background-color: #73000A;
+    color:white;
+    width:100.5%;
+    position: absolute;
+    margin-left: -8px;
+    top: 90px;
+}
+#header-college h3 {
+    margin-left: 55px;
+}
+
+/*Main Content*/
+#main-content {
+    width: 90%;
+    position: absolute;
+}
+
+
+
+/*Navigation*/
+/*Header Nav*/ 
+#header-nav {
+    padding-right: 60px; /*flex this?*/
+    position:relative; 
+    top:-10px
+}
+#header-nav ul {
+    padding-left: 0; /*No indent*/
+    text-align: right;
+}
+#header-nav li {
+    list-style-type: none;
+    text-align: right;
+    display: inline-block; /*shows up in a line*/
+    font-size: x-small;
+    margin-right: 3px;
+    min-width: 4ch;
+}
+#header-nav a {
+    color:white;
+    text-decoration: none;
+    border-bottom: 1px green;
+}
+#header-nav a:hover {
+    color:white;
+    background-color: #CD2E40;
+    padding:1px;
+}
+
+
+/*Typography*/
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*flexing*/
+@media only screen and (min-width:600px) {
+    .columns {
+        display: flex;
+    }
+    .one {
+        flex:1;
+    }
+    .two {
+        flex:2;
+    }  
+    .three {
+        flex:3;
+    }
+    .four {
+        flex:4;
+    }
+}
+
+@media (max-width: 800px) {
+    #header-nav {
+        display: none;
+    }
+}

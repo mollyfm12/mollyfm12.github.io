@@ -16,6 +16,8 @@ body {
 header, footer {
     background-color: lightskyblue;
     color: white;
+    position:relative;
+    padding:20px 0;
 }
 
 .idea {
@@ -27,6 +29,12 @@ header, footer {
     margin-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
+    position:relative;
+}
+.idea-img p {
+    padding:5px;
+    background-color: navy;
+    color: white;
 }
 .idea:nth-child(even) {
     background-color: aliceblue;
@@ -44,29 +52,78 @@ header, footer {
     padding: 5px;
 }
 
-/* Navigation */
+/*Animation*/
+#animation-fun {
+    background-color: aliceblue;
+    padding:20px;
+    height: 200px;
+    position:relative;
+}
 
-#main-nav ul {
+#ball {
+    height: 30px;
+    width: 30px;
+    background-color: blueviolet;
+    border-radius: 50px;
+    animation-name:fun;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fun {
+    0% {background-color: red;}
+    20% {background-color: orange;}
+    40% {background-color: yellow;}
+    60% {background-color: green;}
+    80% {background-color: blue;}
+    100% {background-color: violet;}
+}
+
+/*Playing with positioning*/
+#main-logo {
+    position:absolute;
+    left: 10px;
+}
+
+
+/* Navigation */
+#sub-nav {
+    position:absolute;
+    top:0;
+    right: 5px;
+}
+
+#main-nav ul, #sub-nav ul {
     padding-left: 0; /* no indent*/
 }
 
-#main-nav a { /*links*/
+#main-nav li, #sub-nav li {
+    list-style-type: none; /*remove bullets*/
+    text-align: center;
+    border-bottom: 1px solid blanchedalmond;
+}
+
+#main-nav li {
+    background-color: navy;
+}
+
+#sub-nav li {
+    margin: 0 5px;
+}
+
+#main-nav a, #sub-nav a { /*links*/
     color: white;
     text-decoration: none;
     border-bottom: 1px solid transparent; /*always can see the border and no moving around*/
 }
 
-#main-nav li {
-    list-style-type: none; /*remove bullets*/
-    background-color: navy;
-    text-align: center;
-    border-bottom: 1px solid blanchedalmond;
+#main-nav a:hover, #sub-nav a:hover {
+    border-bottom: 1px solid white;
+    text-decoration: none;
 }
 
 #main-nav a:hover {
-    color: navy;
-    border-bottom: 1px solid white;
-    text-decoration: none;
+    color: lightskyblue;
 }
 
 /* Typography */
@@ -110,5 +167,12 @@ footer p {
     }
     .node {
         flex-basis: 30%;
+    }
+    .idea-img p {
+        position:absolute;
+        padding:5px;
+        background-color: navy; /*becomes a subheading in mobile*/
+        color: white;
+        bottom:0;
     }
 }

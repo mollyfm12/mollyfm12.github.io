@@ -59,6 +59,10 @@ header {
 }
 .group img {
     align-items: center;
+    max-width:90%;
+    position: relative;
+    display: block;
+    margin: auto;
 }
 
 

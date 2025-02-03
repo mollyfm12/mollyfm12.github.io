@@ -49,29 +49,119 @@ body {
 #top-page {
     position: relative;
     margin-left: 80px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 #top-page img {
     width:100%;
     margin: 10px;
 }
-#main-section {
+.idea-img {
+    background-color: white;
     position:relative;
+    left:50px;
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-left-color: #73000A;
+}
+.idea-img h3, #images-section h3, #news-story h3 {
+    color:#73000A;
+}
+
+#main-section, #news-section {
+    position:relative;
+    margin:20px;
+}
+#top-paragraph, #images-section, #line {
+    position:relative;
+    height: 120px;
+    width:85%;
+    left:100px;
+    padding:6px;
+    margin:20px
 }
 #top-paragraph {
-    position:relative;
-    background-color: orange;
-    height: 120px;
+    font-size: x-large;
+    border-bottom-style: solid;
+    border-bottom-color: #c7c7c7;
+    border-bottom-width: 2px;
 }
-#images-section {
-    background-color: red;
-    position:relative;
-}
+
 .main-text {
     padding: 10px;
     margin: 5px;
     margin-left:85px;
 }
+.tile {
+    margin:17px;
+    padding:3px;
+}
 
+#bottom-half {
+    position: absolute;
+    top:1850px;
+    left: 550px;
+}
+#news-section {
+    color:#73000A;
+}
+#news-section ul {
+    padding-left: 0; /*No indent*/
+    text-align: right;
+}
+#news-section li {
+    list-style-type: none;
+    text-align: left;
+    display: inline-block;
+}
+#news-section a {
+    text-decoration: none;
+    color:#73000A;
+    position: relative;
+    right:100px;
+}
+#news-story {
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #c7c7c7;
+}
+#news-story h3 {
+    width: 450px;
+}
+#news-story img {
+    position:relative;
+    right:100px;
+}
+
+#main-footer {
+    position:absolute;
+    width:100%;
+}
+#grey-footer {
+    position:relative;
+    height:60px;
+    top:2500px;
+    background-color: #ECECEC;
+    width:100%;
+    padding-top:5px;
+}
+#red-footer {
+    background-color: #73000A;
+    position:relative;
+    top:2500px;
+    color:white;
+}
+.foot p:hover {
+    background-color: #CD2E40;
+}
+.foot {
+    margin:10px;
+    padding:5px;
+}
 
 
 
@@ -107,13 +197,13 @@ body {
 #main-nav {
     position:relative; 
     padding: 15px;
-    width:30px;
-    margin-right: 15px;
+
 }
 #main-nav ul {
     position: relative;
     padding-left: 0; /*No indent*/
     text-align: right;
+    width: 300px;
 }
 #main-nav a {
     color:black;
@@ -142,7 +232,7 @@ body {
 
 /*flexing*/
 @media only screen and (min-width:600px) {
-    .columns, .main-text {
+    .columns, .main-text, #news-story {
         display: flex;
     }
     .one {
@@ -157,6 +247,22 @@ body {
     .four { 
         flex:4;
     }
+    .six {
+        flex:6;
+    }
+    .programs, .tile {
+        flex-wrap:wrap; /*wraps the text boxes within that column space*/
+    }
+    .tile {
+        width:40%; /*the tiles are taking up 40% of the space; 2 tiles in the same row*/
+    }
+    .idea-img {
+        position:absolute;
+        padding:5px; /*becomes a subheading in mobile*/
+        color: black;
+        bottom:0;
+    }
+    
 }
 
 @media (max-width: 800px) {
@@ -164,32 +270,3 @@ body {
         display: none;
     }
 }
-
-
-
-
-
-
-
-/*
-<section class="one">
-                            <img src="https://picsum.photos/250/150">
-                            <p>jsjsjsjs</p>
-                        </section>
-                        <section class="one">
-                            <img src="https://picsum.photos/250/150">
-                            <p>jsjsjsjs</p>
-                        </section>
-                        <section class="one">
-                            <img src="https://picsum.photos/250/150">
-                            <p>jsjsjsjs</p>
-                        </section>
-                        <section class="one">
-                            <img src="https://picsum.photos/250/150">
-                            <p>jsjsjsjs</p>
-                        </section>
-                        <section class="one">
-                            <img src="https://picsum.photos/250/150">
-                            <p>jsjsjsjs</p>
-                        </section>
-*/

@@ -1,23 +1,24 @@
 /*Structure*/
 body {
-    background-color: green;
+    background-color: white;
+    width: 100%;
+    margin: 0 auto 0 auto;
 }
+
 
 /*Headers*/
 #main-header {
     background-color: black;
     height: 100px;
     width: 101%;
-    position: absolute;
+    position: relative;
     margin-top: -15px;
-    margin-left: -10px;
 }
 
 #header-logo {
     color:white;
-    margin-left: 120px;
+    margin-left: 160px;
     position: relative;
-    bottom:15px;
 }
 #header-logo p {
     position: absolute;
@@ -31,29 +32,55 @@ body {
 #header-college {
     background-color: #73000A;
     color:white;
-    width:100.5%;
-    position: absolute;
-    margin-left: -8px;
-    top: 90px;
+    width:100%;
+    position: relative;
+    margin-top:-20px;
+
 }
 #header-college h3 {
-    margin-left: 55px;
+    margin-left: 80px;
 }
 
 /*Main Content*/
-#main-content {
+#main-content, .main-text {
     width: 90%;
     position: absolute;
 }
+#top-page {
+    position: relative;
+    margin-left: 80px;
+}
+#top-page img {
+    width:100%;
+    margin: 10px;
+}
+#main-section {
+    position:relative;
+}
+#top-paragraph {
+    position:relative;
+    background-color: orange;
+    height: 120px;
+}
+#images-section {
+    background-color: red;
+    position:relative;
+}
+.main-text {
+    padding: 10px;
+    margin: 5px;
+    margin-left:85px;
+}
+
 
 
 
 /*Navigation*/
 /*Header Nav*/ 
 #header-nav {
-    padding-right: 60px; /*flex this?*/
+    padding-right: 60px;
     position:relative; 
-    top:-10px
+
 }
 #header-nav ul {
     padding-left: 0; /*No indent*/
@@ -70,15 +97,44 @@ body {
 #header-nav a {
     color:white;
     text-decoration: none;
-    border-bottom: 1px green;
 }
-#header-nav a:hover {
+#header-nav a:hover{
     color:white;
     background-color: #CD2E40;
     padding:1px;
 }
-
-
+/*Main navigation*/
+#main-nav {
+    position:relative; 
+    padding: 15px;
+    width:30px;
+    margin-right: 15px;
+}
+#main-nav ul {
+    position: relative;
+    padding-left: 0; /*No indent*/
+    text-align: right;
+}
+#main-nav a {
+    color:black;
+    text-decoration: none;
+}
+#main-nav li {
+    list-style-type: none;
+    text-align: left;
+    font-size: large;
+    padding:4px;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-color: #c7c7c7;
+    
+}
+#main-nav a:hover {
+    color:white;
+    background-color: #CD2E40;
+    padding:1px;
+}
 /*Typography*/
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -86,7 +142,7 @@ body {
 
 /*flexing*/
 @media only screen and (min-width:600px) {
-    .columns {
+    .columns, .main-text {
         display: flex;
     }
     .one {
@@ -98,13 +154,42 @@ body {
     .three {
         flex:3;
     }
-    .four {
+    .four { 
         flex:4;
     }
 }
 
 @media (max-width: 800px) {
-    #header-nav {
+    #header-nav a{
         display: none;
     }
 }
+
+
+
+
+
+
+
+/*
+<section class="one">
+                            <img src="https://picsum.photos/250/150">
+                            <p>jsjsjsjs</p>
+                        </section>
+                        <section class="one">
+                            <img src="https://picsum.photos/250/150">
+                            <p>jsjsjsjs</p>
+                        </section>
+                        <section class="one">
+                            <img src="https://picsum.photos/250/150">
+                            <p>jsjsjsjs</p>
+                        </section>
+                        <section class="one">
+                            <img src="https://picsum.photos/250/150">
+                            <p>jsjsjsjs</p>
+                        </section>
+                        <section class="one">
+                            <img src="https://picsum.photos/250/150">
+                            <p>jsjsjsjs</p>
+                        </section>
+*/

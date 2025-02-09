@@ -1,0 +1,64 @@
+/*Structure*/
+body {
+    background-color: cornsilk;
+}
+
+header, footer {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+header h1 {
+    color:coral;
+}
+header h2, footer {
+    color:indianred;
+}
+
+#main-hello, #main-color, #main-image {
+    background-color: darksalmon;
+    color:azure;
+    border-color: indianred;
+    border-style: solid;
+    border-width: 2px;
+    padding:5px;
+    margin:5px;
+    display: block;
+    text-align: center;
+}
+
+/*Buttons*/
+#main-hello, #main-color, #main-image {
+    color:lavenderblush;
+}
+
+#star {
+    display: block;
+    margin: 10px auto;
+    font-size: 150px;
+    text-align: center;
+}
+
+#main-image img {
+    width: auto;
+    height: auto;
+    padding:20px;
+}
+
+
+
+/*Typography*/
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/*Flex*/
+@media only screen and (min-width:768px) {
+    .columns {
+        display: flex;
+    }
+
+    .one {
+        flex:1;
+    }
+}

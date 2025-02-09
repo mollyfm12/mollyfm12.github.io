@@ -56,6 +56,10 @@ header, footer {
     padding: 5px;
 }
 
+.sad {
+    color:purple;
+}
+
 /*Animation*/
 #animation-fun {
     background-color: aliceblue;
@@ -142,6 +146,19 @@ header, footer {
 #main-nav a:hover {
     color: lightskyblue;
 }
+
+
+/*Button*/
+.happy {
+    color: pink;
+}
+.sad {
+    color:darkblue
+}
+.hidden {
+    display: none;
+}
+.emotions
 
 /* Typography */
 header h1 {

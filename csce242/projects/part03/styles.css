@@ -1,0 +1,123 @@
+/*Structure*/
+:root {
+    --main-background-color: rgb(224, 224, 224);
+    --content-background-color:rgb(176, 176, 176);
+    --nav-li-color:rgb(53, 53, 53);
+    --nav-background-color:rgb(7, 7, 7);
+    --h1-color:rgb(33, 33, 33);
+    --nav-hover-color:rgb(245, 244, 245);
+    --node-background-color:rgb(128, 126, 126);
+}
+
+body {
+    background-color: var(--main-background-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: block;
+    margin: auto;
+    position: relative;
+    width:100%;
+}
+header h1 {
+    color: var(--h1-color);
+    position:relative;
+    margin: 20px;
+    margin-left:90px;
+}
+header img {
+    position:absolute;
+    bottom:60px;
+    display: block;
+    width:60px;
+    height: auto;
+    margin:10px;
+}
+
+/*Header Navigation*/
+#header-nav ul {
+    padding-left: 0; /* no indent*/
+    background-color: var(--nav-background-color);
+    width:100%;
+    text-align: center;
+}
+#header-nav a, a { /*links*/
+    color: var(--nav-li-color);
+    text-decoration: none;
+}
+#header-nav li {
+    list-style-type: none; /*remove bullets*/
+    display: inline-block; /*display all next to eachother*/
+    padding:20px;
+}
+#header-nav a:hover, a:hover {
+    color: var(--nav-hover-color)
+}
+
+/*Main*/
+#content {
+    background-color: var(--content-background-color);
+    width:80%;
+    margin: auto;
+    border-radius: 3px;
+    padding:15px;
+    margin-top: 15px;
+}
+#main-carosel {
+    display: block;
+    max-width:90%;
+    margin:auto;
+}
+#main-content {
+    display: block;
+    max-width:90%;
+    margin:auto;
+    padding:20px;
+    margin:20px;
+}
+#content h3 {
+    margin-left:50px;
+}
+
+/*Florence*/
+#florence-page, #history-page {
+    width:70%;
+    display: block;
+    margin:auto;
+    background-color: var(--content-background-color);
+}
+.gallery, .link {
+    padding:35px;
+    margin:auto;
+}
+.node, .link {
+    text-align: center;
+    padding: 25px;
+    margin:auto;
+    background-color: var(--node-background-color);
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+/*Flex*/
+@media only screen and (min-width:768px) {
+    .columns, #main-content, #florence-page {
+        display: flex;
+    }
+
+    .one {
+        flex:1;
+    }
+    .three {
+        flex:3;
+    }
+    .gallery {
+        flex-wrap:wrap; /*wraps the text boxes within that column space*/
+    }
+}

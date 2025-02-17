@@ -16,6 +16,7 @@
 body {
     background-color: var(--main-background-color);
     font-family: Arial, Helvetica, sans-serif;
+    margin:0;
 }
 
 header {
@@ -58,6 +59,15 @@ header img {
 }
 #header-nav a:hover, a:hover {
     color: var(--nav-hover-color)
+}
+#toggle-nav div {
+    width: 25px;
+    height:2px;
+    background-color: var(--nav-li-color);
+    margin:6px 0;
+}
+.hide-small {
+    display:none;
 }
 
 /*Main*/
@@ -237,11 +247,21 @@ header img {
     .three {
         flex:3;
     }
+    #main-nav li {
+        flex:1; 
+    }
     .italy-top {
         display: flex;
         flex-direction: column; /* Stack elements vertically */
     }
     .gallery {
         flex-wrap:wrap; /*wraps the text boxes within that column space*/
+    }
+
+    #toggle-nav {
+        display: none;
+    }
+    .hide-small {
+        display: flex;
     }
 }

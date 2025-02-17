@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 05</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Assignment 8</h1>
+            <h2>If Statements</h2>
+            <nav>
+                <div id="menu-toggle">&#9660;</div>
+                <ul id="menu-items" class="hidden">
+                    <li onclick="showExercise(1)">Exercise 1</li>
+                    <li onclick="showExercise(2)">Exercise 2</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="exercise1" class="hidden">
+                <h3>Traveling</h3>
+                <label for="transport">Enter mode of transport:</label>
+                <input type="text" id="transport" oninput="showTransportImage()">
+                <div id="transport-image"></div>
+            </section>
+            <section id="exercise2" class="hidden">
+                <h3>Color My Heart</h3>
+                <div id="heart">&#9829;</div>
+                <button onclick="changeHeartColor('red')">Red</button>
+                <button onclick="changeHeartColor('blue')">Blue</button>
+                <button onclick="changeHeartColor('green')">Green</button>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Molly Mason </p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

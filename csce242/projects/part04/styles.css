@@ -1,0 +1,330 @@
+/*Structure*/
+:root {
+    --main-background-color: rgba(244, 250, 220, 0.884);
+    --content-background-color:rgb(173, 202, 179);
+    --nav-li-color:rgb(248, 217, 233);
+    --nav-background-color: indianred;
+    --h1-color:black;
+    --nav-hover-color:rgb(245, 244, 245);
+    --node-background-color:rgb(149, 174, 154);
+    --history-background-color:rgb(149, 174, 154);
+    --dropdown-background-color:indianred;
+    --dropdown-color:rgb(245,245,245);
+    --italy-background-color:rgb(150,150,150);
+    --gallery-background-color: rgb(149, 174, 154);
+}
+
+body {
+    background-color: var(--main-background-color);
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: auto;
+    position: relative;
+    width:100%;
+    padding: 10px;
+    flex-wrap: nowrap;
+}
+header h1 {
+    color: var(--h1-color);
+    margin:0;
+    flex-grow: 1;
+    text-align: left;
+}
+header img {
+    margin: 20px;
+    width:60px;
+    height: auto;
+}
+
+/*Header Navigation*/
+#header-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--nav-background-color);
+    text-align: center;
+    z-index: 10;
+}
+#header-nav ul {
+    padding-left: 0;
+    background-color: var(--nav-background-color);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#header-nav a, a { /*links*/
+    color: var(--nav-li-color);
+    text-decoration: none;
+}
+#header-nav li {
+    list-style-type: none; /*remove bullets*/
+    display: inline-block; /*display all next to eachother*/
+    padding:10px;
+}
+#header-nav a:hover, a:hover {
+    color: var(--nav-hover-color)
+}
+#toggle-nav div {
+    width: 20px;
+    height:2px;
+    background-color: var(--nav-li-color);
+    margin:4px 20px;
+    display: block;
+}
+#toggle-nav {
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.hide-small {
+    display: none;
+}
+
+/*Main*/
+#content {
+    background-color: var(--content-background-color);
+    width:80%;
+    margin: auto;
+    border-radius: 3px;
+    padding:15px;
+    margin-top: 15px;
+}
+#main-carosel {
+    display: block;
+    max-width:90%;
+    margin:auto;
+    margin-top: 70px;
+}
+#main-content {
+    display: block;
+    max-width:90%;
+    margin:auto;
+    padding:20px;
+    margin:20px;
+    margin-top: -10px;
+}
+#main-content div {
+    margin: 5px;
+    display: flex;
+    flex-direction: column; /* Forces stacking */
+    align-items: flex-start; /* Aligns text to the left */
+}
+#content h3 {
+    margin-left:50px;
+}
+#main-carosel img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+    margin-bottom: 10px;
+}
+#gallery {
+    margin:auto;
+    background-color: var(--gallery-background-color);
+    padding: 20px;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap:15px;
+}
+#gallery-image {
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+
+
+/*Florence*/
+#florence-page, #history-page {
+    width:70%;
+    display: block;
+    margin:auto;
+    margin-top: 50px;
+    background-color: var(--content-background-color);
+}
+.gallery, .link {
+    padding:35px;
+    margin:auto;
+    margin-left:20px;
+    margin-right:20px;
+}
+.node, .link {
+    text-align: center;
+    padding: 15px;
+    margin:auto;
+    background-color: var(--node-background-color);
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+#history-page {
+    width:auto;
+    width:70%;
+    display: block;
+    margin:auto;
+    padding:20px;
+    margin-top: 70px;
+}
+#history-page h3 {
+    background-color: var(--history-background-color);
+    border-radius: 10px;
+    padding:10px;
+}
+.hidden {
+    display: none;
+}
+#paragraph-container {
+    margin-top: 20px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    background-color: var(--history-background-color);
+}
+#menu {
+    background-color: var(--dropdown-background-color);
+    color: var(--dropdown-color);
+}
+.topic-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.topic-content p {
+    flex: 1;
+}
+.topic-image {
+    width: 200px;
+    height: auto;
+    border-radius: 3px;
+}
+
+/*Italy*/
+#italy-page {
+    margin:auto;
+    display: block;
+    width:80%;
+}
+#cities li {
+    list-style-type: none; /*remove bullets*/
+    display: inline-block; /*display all next to eachother*/
+    padding:10px;
+}
+#cities ul {
+    background-color: var(--dropdown-background-color);
+    color: var(--dropdown-color);
+    border-radius: 6px;
+}
+#italy-map {
+    margin: 15px;
+}#italy-gallery {
+    margin:auto;
+    background-color: var(--italy-background-color);
+    padding: 20px;
+    border-radius: 3px;
+}
+
+#city-description {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/*Page4*/
+#places-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding:20px;
+    width: 80%;
+    margin:auto;
+}
+.grid-item {
+    background-color: var(--content-background-color);
+    padding: 20px;
+    margin:20px;
+    border-radius: 10px;
+    text-align: center;
+}
+/*Budapest*/
+#budapest-page, #FAQ-page, #resources {
+    margin:auto;
+    display: block;
+    width:80%;
+    background-color: var(--content-background-color);
+}
+#image-stack {
+    margin: 15px;
+    flex-wrap: wrap;
+}
+.image-to-stack {
+    margin:15px 0;
+}
+#budapest-p {
+    padding: 20px;
+    margin: 20px;
+}
+
+/*FAQ*/
+#FAQ-page, #resources {
+    padding:20px;
+    margin-top: 10px;
+}
+#questions {
+    padding:5px;
+    margin: 5px;
+}
+
+/*Flex*/
+@media only screen and (min-width:768px) {
+    .columns, #main-content, #florence-page, #italy-page, #budapest-page, #FAQ-page, #main-content p {
+        display: flex;
+    }
+
+    .one {
+        flex:1;
+    }
+    .three {
+        flex:3;
+    }
+    #main-nav li {
+        flex:1; 
+    }
+    .italy-top {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .gallery {
+        flex-wrap:wrap; /*wraps the text boxes within that column space*/
+    }
+
+    #toggle-nav {
+        display: none;
+    }
+    .hide-small {
+        display: flex !important;
+    }
+    #nav-items {
+        display: flex !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #nav-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+}

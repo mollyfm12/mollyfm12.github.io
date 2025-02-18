@@ -3,15 +3,16 @@
     --main-background-color: rgba(244, 250, 220, 0.884);
     --content-background-color:rgb(173, 202, 179);
     --nav-li-color:rgb(248, 217, 233);
-    --nav-background-color: indianred;
+    --nav-background-color: rgb(206, 113, 113);
     --h1-color:black;
     --nav-hover-color:rgb(245, 244, 245);
     --node-background-color:rgb(149, 174, 154);
     --history-background-color:rgb(149, 174, 154);
-    --dropdown-background-color:indianred;
+    --dropdown-background-color:rgb(206, 113, 113);
     --dropdown-color:rgb(245,245,245);
     --italy-background-color:rgb(150,150,150);
     --gallery-background-color: rgb(149, 174, 154);
+    --button-hover: cornflowerblue;
 }
 
 body {
@@ -217,6 +218,9 @@ header img {
     margin:auto;
     display: block;
     width:80%;
+    margin-top: 70px;
+    background-color: var(--content-background-color);
+    padding:15px;
 }
 #cities li {
     list-style-type: none; /*remove bullets*/
@@ -230,13 +234,34 @@ header img {
 }
 #italy-map {
     margin: 15px;
-}#italy-gallery {
+    flex:1;
+    max-width: 300px;
+    text-align: center;
+}
+#italy-map {
+    max-width: 100%;
+    height: auto;
+}
+#italy-gallery {
     margin:auto;
     background-color: var(--italy-background-color);
     padding: 20px;
     border-radius: 3px;
 }
-
+.italy-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 20px; 
+    width: 100%; 
+    max-width: 1200px;
+    margin: auto;
+}
+.italy-top {
+    flex:2;
+    display: flex;
+    flex-direction: column;
+}
 #city-description {
     font-size: 18px;
     font-weight: bold;
@@ -246,39 +271,98 @@ header img {
 /*Page4*/
 #places-grid {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     padding:20px;
     width: 80%;
     margin:auto;
+    margin-top: 70px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    width: 100%;
 }
 .grid-item {
     background-color: var(--content-background-color);
     padding: 20px;
-    margin:20px;
     border-radius: 10px;
     text-align: center;
 }
 /*Budapest*/
-#budapest-page, #FAQ-page, #resources {
+#budapest-page {
     margin:auto;
-    display: block;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
     width:80%;
     background-color: var(--content-background-color);
 }
+#budapest-content {
+    width: 65%;
+    min-width: 300px;
+}
 #image-stack {
-    margin: 15px;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 30%;
+    min-width: 160px;
+    max-width: 80%;
 }
 .image-to-stack {
     margin:15px 0;
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    max-width: 160px;
 }
 #budapest-p {
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: justify;
 }
+#back-button {
+    display: block;
+    position: relative;
+    margin: auto;
+    top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 70px;
+    width:140px;
+}
+#back-button:hover {
+    background-color: var(--button-hover);
+}
+#image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+}
+.gallery-image {
+    width: 150px; /* Default size */
+    height: auto;
+    object-fit: cover;
+}
+
 
 /*FAQ*/
 #FAQ-page, #resources {
+    margin:auto;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    width:80%;
+    background-color: var(--content-background-color);
     padding:20px;
     margin-top: 10px;
 }
@@ -289,7 +373,7 @@ header img {
 
 /*Flex*/
 @media only screen and (min-width:768px) {
-    .columns, #main-content, #florence-page, #italy-page, #budapest-page, #FAQ-page, #main-content p {
+    .columns, #main-content, #florence-page, #italy-page, #FAQ-page, #main-content p {
         display: flex;
     }
 
@@ -327,4 +411,69 @@ header img {
         flex-direction: column;
         width: 100%;
     }
+    .italy-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #italy-map {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    #italy-map img {
+        max-width: 80%; /* Prevents it from being too large */
+        height: auto;
+    }
+
+    #italy-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center images */
+    }
+
+    #italy-gallery img {
+        width: 80px; /* Slightly smaller images on mobile */
+        height: auto;
+        margin: 5px;
+    }
+
+    #image-stack {
+        width: 100%; /* Full width on small screens */
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .image-to-stack {
+        max-width: 120px; /* Adjust image size */
+        height: auto;
+    }
 }
+
+@media (max-width: 1024px) {
+    /* Adjust layout for medium screens */
+    #budapest-page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #budapest-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    #image-stack {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Reduce gallery image size */
+    .gallery-image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+

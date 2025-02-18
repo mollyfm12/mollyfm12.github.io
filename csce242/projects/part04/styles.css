@@ -360,15 +360,24 @@ header img {
     margin:auto;
     display: block;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 80px;
     width:80%;
     background-color: var(--content-background-color);
     padding:20px;
-    margin-top: 10px;
 }
 #questions {
-    padding:5px;
+    padding:15px;
     margin: 5px;
+    text-align: left;
+    margin-right: 30px;
+    background-color: var(--node-background-color);
+    border-radius: 3px;
+}
+#selected-question-paragraph {
+    text-align: left;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 30px;
 }
 
 /*Flex*/

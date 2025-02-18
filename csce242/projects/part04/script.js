@@ -123,3 +123,28 @@ document.addEventListener("DOMContentLoaded", function () {
 document.getElementById("back-button").addEventListener("click", function() {
     window.location.href = "page3.html";
 });
+
+
+function checkEnter(event) {
+    if (event.key === 'Enter') {
+        const userInput = document.getElementById("txt-question").value;
+        const userQuestionDisplay = document.getElementById("user-question-display");
+        userQuestionDisplay.textContent = "QUESTIONS: " + userInput;
+        document.getElementById("txt-question").value = ""; // Clear input after submission
+    }
+}
+
+function displayQuestionParagraph() {
+    const selectedQuestion = document.getElementById("questions-select").value;
+    const selectedQuestionParagraph = document.getElementById("selected-question-paragraph");
+
+    if (selectedQuestion === "option1") {
+        selectedQuestionParagraph.textContent = "For packing for the whole semester it is a difficult task. Florence weather in the winter tends to be colder around 50 degrees F; however, in the spring months it gets a lot warmer...";
+    } else if (selectedQuestion === "option2") {
+        selectedQuestionParagraph.textContent = "Common methods of travel from Florence include trains, buses, and regional flights. Flying directly out of Florence can be either sparce or expensive when it comes to your options. Luckily...";
+    } else if (selectedQuestion === "option3") {
+        selectedQuestionParagraph.textContent = "There are several cultural differences, such as meal times, tipping practices, and communication styles. In Italy, people value their time and traditions. Many restaurants will not open until 7:30 pm because Italians eat dinner much later than in America...";
+    } else {
+        selectedQuestionParagraph.textContent = ""; // Clear paragraph when no selection
+    }
+}

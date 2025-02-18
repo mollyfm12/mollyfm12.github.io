@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Florence</title>
+        <title>FAQ</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
@@ -27,28 +27,32 @@
         </header>
         <main>
             <section id="FAQ-page">
-                <section class="columns one" id="questions">
+                <section id="questions">
                     <p>
                         <label for="txt-question">Enter any questions here: </label>
-                        <input type="text" id="txt-question">
+                        <input type="text" id="txt-question" onkeydown="checkEnter(event)">
                     </p>
+                    <p id="user-question-display"></p>
                 </section>
-                <section class="columns one">
+                <section>
                     <p>Common questions: </p>
-                    <select id="questions">
+                    <select id="questions-select" onchange="displayQuestionParagraph()">
                         <option value="">--Select a question--</option>
                         <option value="option1">What to pack?</option>
                         <option value="option2">What are common methods of travel from Florence?</option>
                         <option value="option3">What are cultural differences between Italy and U.S.?</option>
                     </select>
+                    <p id="selected-question-paragraph"></p>
                 </section>
             </section>
             <section id="resources">
                 <h3>HELFFUL RESOURCES:</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p>Perferendis numquam eius error aliquid id delectus quo.</p>
-                <p>totam distinctio illum accusantium nesciunt cum odio sunt repellat.</p>
+                <p>AMAZON PACKING ESSENTIALS</p>
+                <p>CULTURAL CUSTOMS IN ITALY</p>
+                <p>ITALIAN FASHION</p>
+                <p>BEST WALKING SHOES</p>
             </section>
         </main>
+        <script src="script.js"></script>
     </body>
 </html>

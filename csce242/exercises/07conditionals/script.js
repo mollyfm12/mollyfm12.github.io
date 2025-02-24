@@ -63,3 +63,67 @@ document.getElementById("btn-up").onclick = () => {
 document.getElementById("btn-pick-color").onclick = () => {
     console.log("color");
 }
+
+//show up every time
+
+let count = 0;
+let updateCount;
+
+document.querySelector("#btn-count").onclick = (event) => {
+    if (event.currentTarget.innerHTML.toLowerCase() == "start") {
+        event.currentTarget.innerHTML = "Stop"; 
+        updateCount = setInterval(()=>{
+            count++;
+            document.querySelector("#count-display").innerHTML = count;
+        }, 1000); //declared entire function with => then the second number says to update it every 1 second
+    }
+    else {
+        event.currentTarget.innerHTML = "Start";
+        clearInterval(updateCount);
+    }
+};
+
+document.querySelector("#btn-reset").onclick = () => {
+    count = 0;
+    clearInterval(updateCount);
+    document.querySelector("#btn-count").innerHTML = "Start";
+    document.querySelector("#count-display").innerHTML = "";
+}
+
+document.querySelector("btn-show-toys").onclick = (event) => {
+    const toys = ["ball", "skipping rope", "doll"]//array
+    
+    event.currentTarget.disabled = true; //disable button
+    /*
+    for(let i = 0; i < toys.length; i++){
+        console.log(toys[i])
+    }
+    */
+
+    const ul = document.createElement("ul");
+    document.getElementById("display-toys").append(ul);
+
+    toys.forEach((toy, i)=>{ //loop through the toys, for each toy within {}
+        const li = document.createElement("li");
+        ul.append(li);
+        li.innerHTML= '${i+1}. ${toy}';
+    });
+
+};
+
+
+//loop through associative array 
+//associate array is a key value to compare, ball is key, an item to throw is value
+document.getElementById("btn-show-toy-desc").onclick = () => {
+    const toys = []
+    toys["ball"] = "an item to throw";
+    toys["doll"] = "an item to love";
+    toys["skipping rope"] = "an item to exercise";
+
+    const section = document.getElementById("display-toy-desc");
+    for(let toy in toys){
+        const p = document.createElement("p");
+        section.append(p);
+        p.innerHTML = '${toy}: ${toys[toy]}';
+    }
+};

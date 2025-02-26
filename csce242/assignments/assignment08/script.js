@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Associative array with titles and corresponding image URLs
     const images = {
         "Happy Birthday": "images/birthday.jpg",
         "Crazy Clown": "images/clown.jpg",
@@ -9,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Work from Home": "images/work.jpg"
     };
 
-    // Select all existing <p> elements inside <main>
+    // Select elements inside <main>
     const titleElements = document.querySelectorAll("main p");
 
     titleElements.forEach(p => {
@@ -22,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Create the popup container (only once)
+    // Popup
     const popup = document.createElement("div");
     popup.id = "popup";
     popup.classList.add("hidden");
@@ -37,14 +36,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const closeButton = document.getElementById("close");
 
-    // Function to show popup
     function showPopup(title, imageSrc) {
         document.getElementById("popup-title").textContent = title;
         document.getElementById("popup-image").src = imageSrc;
         popup.classList.remove("hidden");
     }
 
-    // Close popup when clicking the close button
+    // Close popup with close button
     closeButton.addEventListener("click", function () {
         popup.classList.add("hidden");
     });

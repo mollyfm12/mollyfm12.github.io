@@ -1,0 +1,84 @@
+/* Structure */
+body {
+    background-color: cornsilk;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+header, footer {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+header h1 {
+    color: coral;
+}
+
+header h2, footer {
+    color: indianred;
+}
+
+
+.title {
+    cursor: pointer;
+    text-decoration: underline;
+    margin: 10px 0;
+}
+
+.title:hover {
+    color: rgb(174, 94, 67);
+}
+
+.hidden {
+    display: none;
+}
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: lavenderblush;
+    padding: 20px;
+    box-shadow: 4px 4px indianred;
+    border-radius: 5px;
+    z-index: 1000;
+    text-align: center;
+    color:indianred;
+    width: 200px; /* Set a fixed width */
+    max-width: 90%;
+}
+
+.popup-content {
+    position: relative;
+}
+
+#popup img {
+    max-width: 100%;  /* Ensures the image fits within the popup */
+    height: auto;  /* Maintains aspect ratio */
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#close {
+    position: absolute;
+    top: -35px;
+    right: -5px;
+    cursor: pointer;
+    font-size: 20px;
+    color: indianred;
+}
+
+a, .title {
+    text-decoration: none;
+    color:peru;
+}
+
+#image-by {
+    margin-top: 20px;
+    color:firebrick;
+    
+}

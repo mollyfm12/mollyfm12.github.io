@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Florence</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.png">
+            <h1>A Study Abroad Scrapbook</h1>
+            <section id="header-nav">
+                <nav>
+                    <div id="toggle-nav">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul id="nav-items" class="hide-small">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="page1.html">Florence</a></li>
+                        <li><a href="page2.html">Around Italy</a></li>
+                        <li><a href="page3.html">Around Europe & Africa</a></li>
+                        <li><a href="page4.html">FAQ</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <main id="history-page">
+            <select id="menu">
+                <option value="">--Select a topic--</option>
+                <option value="option1">Discovery of Florence</option>
+                <option value="option2">The Medici Family</option>
+                <option value="option3">World War I</option>
+            </select>
+            <div id="paragraph-container">
+                <div class="topic-content">
+                    <p id="option1" class="hidden">The Discovery of Florence was a key moment in history...</p>
+                    <img id="option1-img" class="hidden topic-image" src="images/pg1a-imgs/square.png" alt="Discovery of Florence">
+                </div>
+            
+                <div class="topic-content">
+                    <p id="option2" class="hidden">The Medici Family played an important role in the Renaissance...</p>
+                    <img id="option2-img" class="hidden topic-image" src="images/pg1a-imgs/medici.jpg" alt="Medici Family">
+                </div>
+            
+                <div class="topic-content">
+                    <p id="option3" class="hidden">During World War I, Florence had a strategic position...</p>
+                    <img id="option3-img" class="hidden topic-image" src="images/pg1a-imgs/wwi.jpg" alt="World War I">
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+/* Structure */
+body {
+    background-color: cornsilk;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+header, footer {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+header h1 {
+    color: coral;
+}
+
+header h2, footer {
+    color: indianred;
+}
+
+#pizza-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.pizza {
+    cursor: pointer;
+    text-align: center;
+}
+
+.pizza img {
+    width: 150px;  
+    height: 150px; 
+    border-radius: 10px;
+    object-fit: cover; 
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.modal {
+    display: none; /* Hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(110, 28, 28, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: rgb(252, 245, 245);
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+    width: 500px;
+    position: relative;
+    padding: 20px;
+    display: flex;
+}
+
+.modal-content img {
+    width: 250px;  
+    height: 250px;  
+    border-radius: 10px;
+    margin: 10px;
+    object-fit: cover; 
+    animation: animate-zoom 2s ease-in-out;
+}
+
+.modal-text {
+    display: block;
+    text-align: left;
+    margin: 25px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@keyframes animate-zoom {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

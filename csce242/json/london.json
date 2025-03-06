@@ -1,0 +1,13 @@
+[
+    {
+        "name": "Buckingham Palace", 
+        "image": "",
+        "description": "Buckingham Palace is the home to the Royal Family.",
+        "more info":
+        [
+            "cost: free", 
+            "where to find: Google Maps", 
+            "rating: 6/10"
+        ]
+    }
+]

@@ -28,6 +28,55 @@
             "where to find: Many locations around the city. Check Google Maps",
             "rating: 8/10"
         ]
+    },
+    {
+        "name": "AirBnb",
+        "image": "", 
+        "description": "We stayed in a 4 person AirBnb. It was not the nicest place by any means; however, it was very convienitenly located. It was one minute away from a main train station and even right under a Starbucks.",
+        "more info": [
+            "cost: ", 
+            "where to find: AirBnb",
+            "rating: 7/10"
+        ]
+    }, 
+    {
+        "name": "Nightlife",
+        "image": "", 
+        "description": "Budapest has a very large nightlife scene. There are many clubs that are popular amoung both vistors and locals. One of the clubs is well known for its interior designs and three stories. ",
+        "more info": [
+            "cost: free", 
+            "where to find: Google Maps",
+            "rating: 8/10"
+        ]
+    }, 
+    {
+        "name": "Dinner",
+        "image": "", 
+        "description": "We got a traditional Hungarian dinner at ___. They are known for Goulash and ____",
+        "more info": [
+            "cost: ~40 euro", 
+            "where to find: Yelp",
+            "rating: 9/10"
+        ]
+    },
+    {
+        "name": "Pho",
+        "image": "", 
+        "description": "After eating most of Italian food for months, we wanted to venture to other cuisines. We travelled to a different neighborhood to get Pho. It was very good for a change of pace. ",
+        "more info": [
+            "cost: ~30 euro", 
+            "where to find: ",
+            "rating: 8/10"
+        ]
+    },
+    {
+        "name": "Public Transit",
+        "image": "", 
+        "description": "Budapest has a very good public transit system. There is both subways and local rails. We were able to buy a 10 pack of passes where you have to validate on each ride. If you do not validate your ticket, you will likely get caught and fined. ",
+        "more info": [
+            "cost: ~20 euro", 
+            "where to find: Many stations around the city",
+            "rating: 9/10"
+        ]
     }
-
 ]

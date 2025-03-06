@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Boat Tour",
+        "image": "", 
+        "description": "This boat tour is a common tourist attraction that many people rave about. It is an hour long boat ride long the Danube River.",
+        "more info": [
+            "cost: ",
+            "where to find: Get Your Guide",
+            "rating: 9/10"
+        ]
+    },
+    {
+        "name": "Thermal Baths",
+        "image": "thermalBaths", 
+        "description": "The thermal baths are a popular attraction for both locals and tourists. It is a large house with many different large baths both warm and cold",
+        "more info": [
+            "cost: 44 euro",
+            "where to find: https://szechenyibath.com",
+            "rating: 6/10"
+        ]
+    },
+    {
+        "name": "Chimney Cake",
+        "image": "chimneyCake.jpg", 
+        "description": "Chimney Cake is a classic dessert known in Eastern Europe. It is a dough with a large center and coated in different flavors of sugar.",
+        "more info": [
+            "cost: ~6 euro",
+            "where to find: Many locations around the city. Check Google Maps",
+            "rating: 8/10"
+        ]
+    }
+
+]

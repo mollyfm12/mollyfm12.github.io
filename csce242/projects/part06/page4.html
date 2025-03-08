@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FAQ</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.png">
+            <h1>A Study Abroad Scrapbook</h1>
+            <section id="header-nav">
+                <nav>
+                    <div id="toggle-nav">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul id="nav-items" class="hide-small">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="page1.html">Florence</a></li>
+                        <li><a href="page2.html">Around Italy</a></li>
+                        <li><a href="page3.html">Around Europe & Africa</a></li>
+                        <li><a href="page4.html">FAQ</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <section id="FAQ-page">
+                <section id="questions">
+                    <p>
+                        <label for="txt-question">Enter any questions here: </label>
+                        <input type="text" id="txt-question" onkeydown="checkEnter(event)">
+                    </p>
+                    <p id="user-question-display"></p>
+                </section>
+                <section>
+                    <p>Common questions: </p>
+                    <select id="questions-select" onchange="displayQuestionParagraph()">
+                        <option value="">--Select a question--</option>
+                        <option value="option1">What to pack?</option>
+                        <option value="option2">What are common methods of travel from Florence?</option>
+                        <option value="option3">What are cultural differences between Italy and U.S.?</option>
+                    </select>
+                    <p id="selected-question-paragraph"></p>
+                </section>
+            </section>
+            <section id="resources">
+                <h3>HELFFUL RESOURCES:</h3>
+                <p>AMAZON PACKING ESSENTIALS</p>
+                <p>CULTURAL CUSTOMS IN ITALY</p>
+                <p>ITALIAN FASHION</p>
+                <p>BEST WALKING SHOES</p>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

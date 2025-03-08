@@ -208,7 +208,7 @@ header img {
     padding:20px;
     background-color: var(--history-background-color);
 }
-#menu {
+#menus {
     background-color: var(--dropdown-background-color);
     color: var(--dropdown-color);
 }
@@ -307,7 +307,7 @@ header img {
     margin:auto;
     display: flex;
     align-items: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     margin-top: 20px;
     width:80%;
@@ -316,6 +316,7 @@ header img {
 #budapest-content {
     width: 65%;
     min-width: 300px;
+    flex-grow: 1;
 }
 #image-stack {
     display: flex;
@@ -324,7 +325,8 @@ header img {
     gap: 10px;
     width: 30%;
     min-width: 160px;
-    max-width: 80%;
+    max-width: 30%;
+    margin-left: auto;
 }
 .image-to-stack {
     margin:15px 0;
@@ -366,6 +368,32 @@ header img {
     height: auto;
     object-fit: cover;
 }
+.buda-item {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+    margin: 20px; 
+    padding: 5px;
+    border-radius: 3px;
+    max-width: 600px;
+    background-color: var(--history-background-color);
+}
+
+.buda-item img {
+    max-width: 150px; 
+    height: auto;
+    border-radius: 8px; 
+}
+
+.buda-item h3 {
+    margin: 0;
+}
+
+.buda-item p {
+    margin: 5px 0;
+    max-width: 300px;
+}
+
 
 
 /*FAQ*/

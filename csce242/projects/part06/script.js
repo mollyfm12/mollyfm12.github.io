@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const paragraphs = document.querySelectorAll("#paragraph-container p");
     const images = document.querySelectorAll(".topic-image");
 
-    menu.addEventListener("change", function () {
+    menus.addEventListener("change", function () {
         const selectedValue = this.value;
 
         // Hide all paragraphs and images

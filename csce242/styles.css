@@ -22,11 +22,14 @@ header {
 #main-home {
     text-align: center;
 }
-#assignment-tab, #projects-tab {
+#assignment-tab, #projects-tab, #node-tab {
     background-color: #9AE1A5;
-    margin: 45px;
+    margin: 25px;
     padding-bottom: 5px;
     border-radius: 40px;
+}
+#node-tab {
+    width: 360px;
 }
 #main-home a:hover {
     color: #3869C9;
@@ -60,6 +63,25 @@ header {
 .group img {
     align-items: center;
     max-width:90%;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+.assign10 {
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.assign10 li {
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.assign10 img {
+    align-items: center;
+    max-width:80%;
     position: relative;
     display: block;
     margin: auto;

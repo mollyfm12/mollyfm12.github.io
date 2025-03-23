@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <title>Tab Name</title>
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                <img id="main-logo" src="https://picsum.photos/50">
+                <h1>Main Title</h1>
+                <nav id="main-nav">
+                    <div id="toggle-nav">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul id="nav-items" class="columns hide-small">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="js-intro.html">JS Intro</a></li>
+                        <li><a href="loops.html">Loops</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="jsons.html">json Parsing</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <nav id="sub-nav">
+                    <ul class="columns">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="columns">
+                <section class="one">
+                    <form method="POST" id="form">
+
+                        <input type="hidden" name="access_key" value="3c232cfb-3f97-4a86-b81c-19a9b278eec2">
+                    
+                        <input type="text" name="name" required>
+                        <input type="email" name="email" required>
+                        <textarea name="message" required></textarea>
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    
+                        <button type="submit">Submit Form</button>
+                    
+                        <div id="result"></div>
+                    
+                    </form>
+                </section>
+                <section class="one">
+                    <h3>Our location</h3>
+                    <iframe id="map" src="https://maps.app.goo.gl/hhST2tUB6BgTMs1Y8"></iframe>
+                </section>
+            </main>
+        </div>
+        <script src="js/contact-us.js"></script>
+    </body>
+</html>
